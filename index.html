@@ -2,20 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulseirinhas da Mavi🌈✨</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Compre pulseiras mágicas feitas com amor na Pulseirinhas da Mavi. Descubra modelos exclusivos e encantadores.">
+    <meta property="og:title" content="Pulseirinhas da Mavi">
+    <meta property="og:description" content="Pulseiras mágicas feitas com amor. Confira os modelos disponíveis!">
+    <meta property="og:image" content="URL_da_imagem_principal">
+    <meta property="og:url" content="URL_do_site">
+    <title>Pulseirinhas da Mavi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-/* Estilo principal */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ffe4e1, #ffd700);
-    color: #333;
-    text-align: center;
-}
+    <style>
+        /* Estilo principal */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9aa2, #ffd700);
+            color: #333;
+            text-align: center;
+        }
+
         /* Desabilitar seleção de texto e zoom */
         body, * {
             user-select: none; 
@@ -23,149 +29,175 @@ body {
             -ms-user-select: none; 
             -moz-user-select: none; 
             touch-action: manipulation;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
-            touch-action: auto;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
 
-/* Cabeçalho */
-header {
-    background: #ff69b4;
-    color: white;
-    padding: 20px 0;
-    position: relative;
-    overflow: hidden;
-}
+        /* Cabeçalho */
+        header {
+            background: #ff69b4;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    animation: slideDown 1s ease-out;
-}
+        header .logo {
+            display: center;
+            align-items: center;
+            gap: 30px;
+            border-radius: 10px;
+        }
 
-header p {
-    font-size: 1.2em;
-    animation: fadeIn 2s ease-in;
-}
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+            animation: slideDown 1s ease-out;
+        }
 
-/* Galeria */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
+        header p {
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in;
+        }
 
-/* Cartões */
-.card {
-    margin: 10px;
-    padding: 10px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        /* Galeria */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
 
-/* Efeito de zoom no cartão */
-.card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
+        /* Cartões */
+        .card {
+            margin: 10px;
+            padding: 10px;
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+            text-align: center;
+            width: 140px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-/* Imagens */
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
-    animation: popIn 1.5s ease-out;
-}
+        /* Efeito de zoom no cartão */
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
 
-/* Botões */
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #ff69b4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-}
+        /* Imagens */
+        .card img {
+            max-width: 50%;
+            border-radius: 10px;
+            animation: popIn 1.5s ease-out;
+        }
 
-/* Efeito no botão ao passar o mouse */
-.btn:hover {
-    background: #ff1493;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Botões */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
 
-/* Rodapé */
-footer {
-    background: #ff69b4;
-    color: white;
-    padding: 10px 0;
-    font-size: 0.9em;
-}
+        /* Efeito no botão ao passar o mouse */
+        .btn:hover {
+            background: #ff1493;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-/* Animações */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+        /* Rodapé */
+        footer {
+            background: #ff69b4;
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-@keyframes popIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-</style>
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h1>Pulseirinhas da Mavi🌈✨</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Mavi" width="50">
+            <h1>Pulseirinhas da Mavi🌈✨</h1>
+        </div>
         <p>Pulseiras mágicas feitas com amor!</p>
     </header>
     <main>
         <section class="gallery">
             <div class="card">
-                <img src="img1.jpg" alt="Pulseira 1">
-                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 1, posso saber mais detalhes?" class="btn">Comprar pulseira 1</a>
+                <img src="img1.jpg" alt="Pulseira 1" loading="lazy">
+                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 1, posso saber mais detalhes?" class="btn" aria-label="Comprar pulseira 1">Comprar pulseira 1</a>
             </div>
             <div class="card">
-                <img src="img2.jpg" alt="Pulseira 2">
-                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 2, posso saber mais detalhes?" class="btn">Comprar pulseira 2</a>
+                <img src="img2.jpg" alt="Pulseira 2" loading="lazy">
+                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 2, posso saber mais detalhes?" class="btn" aria-label="Comprar pulseira 2">Comprar pulseira 2</a>
             </div>
             <div class="card">
-                <img src="img3.jpg" alt="Pulseira 2">
-                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 3, posso saber mais detalhes?" class="btn">Comprar pulseira 3</a>
+                <img src="img3.jpg" alt="Pulseira 3" loading="lazy">
+                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 3, posso saber mais detalhes?" class="btn" aria-label="Comprar pulseira 3">Comprar pulseira 3</a>
             </div>
             <div class="card">
-                <img src="img4.jpg" alt="Pulseira 2">
-                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 4, posso saber mais detalhes?" class="btn">Comprar pulseira 4</a>
+                <img src="img4.jpg" alt="Pulseira 4" loading="lazy">
+                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 4, posso saber mais detalhes?" class="btn" aria-label="Comprar pulseira 4">Comprar pulseira 4</a>
             </div>
             <div class="card">
-                <img src="img5.jpg" alt="Pulseira 2">
-                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 5, posso saber mais detalhes?" class="btn">Comprar pulseira 5</a>
+                <img src="img5.jpg" alt="Pulseira 5" loading="lazy">
+                <a href="https://wa.me/554796010612?text=Olá! Gostei da pulseira 5, posso saber mais detalhes?" class="btn" aria-label="Comprar pulseira 5">Comprar pulseira 5</a>
             </div>
-            <!-- Adicione mais 8 imagens semelhantes -->
+            <!-- Adicione mais imagens conforme necessário -->
         </section>
     </main>
     <footer>
